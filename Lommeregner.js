@@ -17,14 +17,21 @@ function potAndsqrt(y){
 let n3 = parseInt(document.getElementById('textboks3').value);
 let n4 = parseInt(document.getElementById('textboks4').value);
 let answer=1 ;
+
 if (y=== "pot") {
 for (let i=0; i < n4; i++ ){
   answer = answer * n3
 }
 document.getElementById("svar").value = answer;
-return answer
 }
-else if (y ==="√") {
+
+else if (y ==="sqrt") {
+let n5 = 0;
+while(n5*n5 !=n3  ){
+  n5 += 1
+}
+
+document.getElementById("svar").value=n5;
 }
 
 }
